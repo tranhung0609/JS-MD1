@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+   tr{
+     text-indent: 2cm;
+   }
+   option{
+     text-indent: 5cm;
+   }
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>FromCurrency</th>
+    <th>ToCurrency</th>
+  </tr>
+  <tr>
+    <td>
+
+      <input type="text" id=b1>
+    </td>
+    <td>
+
+      <select name="" id="b2">
+        <option value="a">VND</option>
+      </select>
+    </td>
+    <td>
+      <select name="" id="b3">
+        <option value="b">USD</option>
+      </select>
+    </td>
+    <td>
+      <button onclick="a1()">Convert</button>
+    </td>
+  </tr>
+</table>
+<script>
+  function a1() {
+  let a2 = document.getElementById("b1").value;
+  let b2 = document.getElementById("b2").value;
+  let b3 = document.getElementById("b3").value;
+  if (b2 == b3) {
+  alert(a2);
+  }
+  if (b2 == 'a' && b3 == 'b') {
+  alert(a2/25000);
+  }
+  }
+</script>
+</body>
+</html>
